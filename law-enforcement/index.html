@@ -178,7 +178,7 @@
         <center>
         <div class="footer-title">Download the app</div>
         <a href="https://apps.apple.com/us/app/traafik-app/id6758915184"><img width="150" src="../images/apple_appstore.png" alt="Download on the Apple App Store" class="margin-bottom"/></a>
-        <a href="#" target="_blank" rel="noopener noreferrer" class="w-inline-block">
+        <a id="google-play-link" href="#" target="_blank" rel="noopener noreferrer" class="w-inline-block">
           <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="margin-bottom"/>
         </a>
         </center>
@@ -217,31 +217,64 @@ $('.footer-link-year').text(new Date().getFullYear());
 </script>
 <script>
 (function () {
+  var url = 'https://dialtoneapp.com/api/v1/store-data/traafik';
   var form = document.getElementById('wf-form-Law-enforcement-subscription');
-  if (!form) return;
+  if (form) {
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var nameInput = document.getElementById('FNAME');
+      var titleInput = document.getElementById('TITLE-2');
+      var emailInput = document.getElementById('EMAIL');
+      var payload = {
+        name: nameInput ? nameInput.value.trim() : '',
+        title: titleInput ? titleInput.value.trim() : '',
+        email: emailInput ? emailInput.value.trim() : ''
+      };
 
-  form.addEventListener('submit', function (event) {
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      })
+        .then(function (response) {
+          if (response.status === 201) {
+            alert("Thanks we'll be in touch soon!");
+          }
+          return response;
+        })
+        .catch(function () {});
+    });
+  }
+
+  var googlePlayLink = document.getElementById('google-play-link');
+  if (!googlePlayLink) return;
+
+  googlePlayLink.addEventListener('click', function (event) {
     event.preventDefault();
-    var nameInput = document.getElementById('FNAME');
-    var titleInput = document.getElementById('TITLE-2');
-    var emailInput = document.getElementById('EMAIL');
-    var payload = {
-      name: nameInput ? nameInput.value.trim() : '',
-      title: titleInput ? titleInput.value.trim() : '',
-      email: emailInput ? emailInput.value.trim() : ''
-    };
-    var url = 'https://dialtoneapp.com/api/v1/store-data/traafik';
+    var email = window.prompt('Enter your email to get invited to Android:', '');
+    if (email === null) return;
+
+    email = email.trim();
+    if (!email) {
+      alert('Please enter a valid email.');
+      return;
+    }
 
     fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(payload)
+      body: JSON.stringify({
+        email: email,
+        android: true
+      })
     })
       .then(function (response) {
         if (response.status === 201) {
-          alert("Thanks we'll be in touch soon!");
+          alert("Thanks! You'll be invited to Android soon.");
         }
         return response;
       })
