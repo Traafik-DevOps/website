@@ -219,5 +219,45 @@
 <script>
 $('.footer-link-year').text(new Date().getFullYear());
 </script>
+<script>
+(function () {
+  var form = document.getElementById('wf-form-home-page-form');
+  if (!form) return;
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    var nameInput = document.getElementById('FNAME-2');
+    var emailInput = document.getElementById('EMAIL-5');
+    var phoneInput = document.getElementById('PHONE-2');
+    var companyInput = document.getElementById('CMPNY');
+    var websiteInput = document.getElementById('WEB-2');
+    var positionInput = document.getElementById('POS-2');
+    var payload = {
+      name: nameInput ? nameInput.value.trim() : '',
+      email: emailInput ? emailInput.value.trim() : '',
+      phone: phoneInput ? phoneInput.value.trim() : '',
+      company: companyInput ? companyInput.value.trim() : '',
+      website: websiteInput ? websiteInput.value.trim() : '',
+      position: positionInput ? positionInput.value.trim() : ''
+    };
+    var url = 'https://dialtoneapp.com/api/v1/store-data/traafik';
+
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    })
+      .then(function (response) {
+        if (response.status === 201) {
+          alert("Thanks we'll be in touch soon!");
+        }
+        return response;
+      })
+      .catch(function () {});
+  });
+})();
+</script>
 </body>
 </html>

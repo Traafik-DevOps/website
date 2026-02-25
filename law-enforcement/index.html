@@ -217,5 +217,39 @@
 <script>
 $('.footer-link-year').text(new Date().getFullYear());
 </script>
+<script>
+(function () {
+  var form = document.getElementById('wf-form-Law-enforcement-subscription');
+  if (!form) return;
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    var nameInput = document.getElementById('FNAME');
+    var titleInput = document.getElementById('TITLE-2');
+    var emailInput = document.getElementById('EMAIL');
+    var payload = {
+      name: nameInput ? nameInput.value.trim() : '',
+      title: titleInput ? titleInput.value.trim() : '',
+      email: emailInput ? emailInput.value.trim() : ''
+    };
+    var url = 'https://dialtoneapp.com/api/v1/store-data/traafik';
+
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    })
+      .then(function (response) {
+        if (response.status === 201) {
+          alert("Thanks we'll be in touch soon!");
+        }
+        return response;
+      })
+      .catch(function () {});
+  });
+})();
+</script>
 </body>
 </html>
