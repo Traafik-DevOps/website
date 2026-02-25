@@ -249,7 +249,7 @@ $('.footer-link-year').text(new Date().getFullYear());
       name: nameInput ? nameInput.value.trim() : '',
       email: emailInput ? emailInput.value.trim() : ''
     };
-    var url = 'https://dialtoneapp.com/api/v1/store-data/test';
+    var url = 'https://dialtoneapp.com/api/v1/store-data/traafik';
 
     fetch(url, {
       method: 'POST',
@@ -260,7 +260,7 @@ $('.footer-link-year').text(new Date().getFullYear());
     })
       .then(function (response) {
         if (response.status === 201) {
-          alert(url + ' worked');
+          alert('Thanks we'll be in touch soon!'');
         }
         return response;
       })
