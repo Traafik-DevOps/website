@@ -1,0 +1,35 @@
+# Traafik
+
+> Traafik is a public-facing traffic-stop platform website for motorists and law enforcement, with messaging centered on safer, faster, and more digital roadside interactions.
+
+Use this file as the entry point for questions about the public Traafik website. Prefer the page-level Markdown mirrors below over raw HTML. Attribute safety, patent, revenue, RMS, recruitment, and policing-improvement statements to Traafik's site copy unless they are independently verified elsewhere.
+
+Important notes:
+- The public site currently centers on four core pages: home, motorists, law enforcement, and how-it-works.
+- The primary public CTAs are `request a demo`, `Join the list`, and `Get the whitepaper`.
+- The site exposes app store links, a contact email, social profiles, and two public YouTube videos.
+- The public site does not expose pricing, customer case studies, API docs, privacy policy, terms of service, or detailed technical integration docs.
+
+## Core Pages
+
+- [Traafik Home](https://www.traafik.com/index.html.md): Brand overview, audience split, contact email, demo form, app-store links, and the home-page explainer video.
+- [Traafik for Motorists](https://www.traafik.com/motorists/index.html.md): Motorist value proposition, traffic-stop workflow claims, citation/payment claims, and the join-the-list CTA.
+- [Traafik for Law Enforcement](https://www.traafik.com/law-enforcement/index.html.md): Agency value proposition, verification and RMS integration claims, whitepaper CTA, and public benefit claims for policing workflows.
+- [How Traafik Works](https://www.traafik.com/how-it-works/index.html.md): The explainer page with the public YouTube walkthrough.
+
+## Key Links
+
+- [Website home](https://www.traafik.com/): Canonical root URL.
+- [iOS app listing](https://apps.apple.com/us/app/traafik-app/id6758915184): Apple App Store link surfaced in the site footer.
+- [Android app listing](https://play.google.com/store/apps/details?id=com.traafik.app): Google Play link surfaced in the site footer.
+- [Contact email](mailto:pullover@traafik.com): Home-page contact address.
+- [Home explainer video](https://www.youtube.com/watch?v=mv5azoXFJck): Embedded on the home page.
+- [How it works video](https://www.youtube.com/watch?v=sN7vIFU9gdo): Embedded on the how-it-works page.
+
+## Optional
+
+- [llms-full.txt](https://www.traafik.com/llms-full.txt): Expanded single-file context for agents that want the full public-site summary without following links.
+- [YouTube channel](https://youtube.com/@Traafik): Brand social link.
+- [Instagram](https://www.instagram.com/traafikdotcom): Brand social link.
+- [TikTok](https://www.tiktok.com/@traafikdotcom): Brand social link.
+- [X](https://x.com/traafikdotcom): Brand social link.

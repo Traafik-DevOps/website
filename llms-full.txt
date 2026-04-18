@@ -1,0 +1,121 @@
+# Traafik
+
+> Full LLM context for the public Traafik website at https://www.traafik.com/, curated from the live pages `/`, `/motorists/`, `/law-enforcement/`, and `/how-it-works/`.
+
+This file is meant for agents that want one fetchable Markdown document instead of following the page-level mirrors. It focuses on what the public site actually says, where the public CTAs live, and which public links are available today.
+
+Important notes:
+- Treat safety, patent, revenue, recruitment, voice-activation, RMS integration, and policing-improvement statements as company claims taken from the public site.
+- Do not infer unlisted pricing, municipal customers, compliance programs, API availability, deployment details, or legal policies that are not published on the public pages.
+- The site presents both a consumer/mobile angle and an agency/enterprise angle.
+- Public navigation centers on four pages: `https://www.traafik.com/`, `https://www.traafik.com/motorists/`, `https://www.traafik.com/law-enforcement/`, and `https://www.traafik.com/how-it-works/`.
+
+## Site Identity
+
+- Brand: Traafik
+- Domain: https://www.traafik.com/
+- Tagline: Traffic Stops Reimagined
+- Positioning: a platform designed for motorists and law enforcement with safety in mind for both
+- Home-page contact email: `pullover@traafik.com`
+
+## Canonical Pages
+
+- [Home](https://www.traafik.com/): Brand overview and contact funnel.
+- [Motorists](https://www.traafik.com/motorists/): Motorist-facing landing page.
+- [Law Enforcement](https://www.traafik.com/law-enforcement/): Agency-facing landing page.
+- [How It Works](https://www.traafik.com/how-it-works/): Explainer video page.
+
+## Home Page Summary
+
+- Page purpose: introduce Traafik and split visitors into motorist and law-enforcement paths.
+- Headline theme: meet Traafik; traffic stops reimagined.
+- Core public message: the site presents Traafik as the first platform designed for motorists and law enforcement with safety in mind for both.
+- Embedded video: `https://www.youtube.com/watch?v=mv5azoXFJck`
+- Primary internal paths from the hero:
+  - [Motorists](https://www.traafik.com/motorists/)
+  - [Law Enforcement](https://www.traafik.com/law-enforcement/)
+- Contact section:
+  - Audience: municipalities and agencies
+  - Email: [pullover@traafik.com](mailto:pullover@traafik.com)
+  - Form fields: full name, work email, phone number
+  - CTA label: `request a demo`
+- About section message: Traafik describes itself as a team dedicated to reshaping the future of traffic stops with technology that helps both motorists and law enforcement.
+
+## Motorists Page Summary
+
+- Page purpose: explain the motorist-facing experience and collect signups.
+- Headline theme: meet Traafik.
+- Core public message: motorists can handle traffic stops in a safer, faster, and less tedious way.
+- Specific on-page claim: the page says motorists can streamline an entire traffic stop in less than 10 minutes.
+- Signup form:
+  - Fields: name and email
+  - CTA label: `Join the list`
+- Public feature themes:
+  - Digital interaction with law enforcement from a distance during traffic stops
+  - Less intrusive traffic-stop experience
+  - Quick citation processing
+  - Digital verification and exchange of motorist and law-enforcement profiles
+  - Past ticket payment in the app
+  - Citation routing to the proper municipalities
+  - Optional instant citation payment
+  - Payment gateways named on the page: Stripe, Venmo, Zelle, PayPal, and more
+  - Voice-activated API guidance for motorists during the stop
+  - Claimed integration with law-enforcement IT and record management systems (RMS)
+
+## Law Enforcement Page Summary
+
+- Page purpose: explain the agency-facing platform and collect whitepaper requests.
+- Headline theme: smarter technology for law enforcement.
+- Core public message: transmit, verify, and confirm motorist profiles without guesswork.
+- Whitepaper form:
+  - Fields: full name, title, company email
+  - CTA label: `Get the whitepaper`
+- Public benefit claims on the page:
+  - Easier transition from conventional traffic stops to a more efficient and safer approach
+  - Increased revenues
+  - Stronger community trust
+  - Less scrutiny
+  - Better recruitment outcomes
+  - Protection for officers
+  - Reduction in human error
+- Technical positioning stated on the page:
+  - Traafik describes the offering as enterprise software
+  - The page says it integrates with law-enforcement IT and RMS systems during stops
+  - The page says the platform provides officers with populated motorist profile data points
+
+## How It Works Page Summary
+
+- Page purpose: provide a short explainer page for the product walkthrough.
+- Main content: embedded YouTube video
+- Video URL: `https://www.youtube.com/watch?v=sN7vIFU9gdo`
+- This page is useful when a user asks for a quick product walkthrough rather than detailed copy or CTA details.
+
+## App Distribution And Media
+
+- iOS app: [Apple App Store](https://apps.apple.com/us/app/traafik-app/id6758915184)
+- Android app: [Google Play](https://play.google.com/store/apps/details?id=com.traafik.app)
+- Home video: [YouTube](https://www.youtube.com/watch?v=mv5azoXFJck)
+- How-it-works video: [YouTube](https://www.youtube.com/watch?v=sN7vIFU9gdo)
+
+## Contact And Social
+
+- Contact email: [pullover@traafik.com](mailto:pullover@traafik.com)
+- YouTube: [@Traafik](https://youtube.com/@Traafik)
+- Instagram: [@traafikdotcom](https://www.instagram.com/traafikdotcom)
+- TikTok: [@traafikdotcom](https://www.tiktok.com/@traafikdotcom)
+- X: [@traafikdotcom](https://x.com/traafikdotcom)
+
+## Public Information Gaps
+
+- No public pricing page is linked from the site.
+- No public privacy policy or terms page is linked from the site.
+- No public API docs or developer docs are linked from the site.
+- No public case studies, customer logos, or customer list are linked from the site.
+- No public legal, procurement, or compliance detail page is linked from the site.
+
+## Page-Level Markdown Mirrors
+
+- [Home mirror](https://www.traafik.com/index.html.md): concise Markdown version of the home page.
+- [Motorists mirror](https://www.traafik.com/motorists/index.html.md): concise Markdown version of the motorist page.
+- [Law enforcement mirror](https://www.traafik.com/law-enforcement/index.html.md): concise Markdown version of the law-enforcement page.
+- [How-it-works mirror](https://www.traafik.com/how-it-works/index.html.md): concise Markdown version of the explainer page.

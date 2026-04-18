@@ -1,0 +1,7 @@
+# Traafik crawl guidance
+# LLM index: https://www.traafik.com/llms.txt
+# Expanded LLM context: https://www.traafik.com/llms-full.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://www.traafik.com/sitemap.xml
